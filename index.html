@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>Моё резюме</title>
   <meta charset="UTF-8">
+  <title>Резюме — Андрей</title>
+
+  <!-- Встроенные стили CSS -->
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .fade-text {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    .fade-text:nth-child(1) { animation-delay: 0.5s; }
+    .fade-text:nth-child(2) { animation-delay: 1.5s; }
+    .fade-text:nth-child(3) { animation-delay: 2.5s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Андрей С.</h1>
-  <p>Системный аналитик</p>
-  
-  <h2>Обо мне</h2>
-  <p>Интересуюсь IT, работаю с API, изучаю GitHub Pages.</p>
-  
-  <h2>Навыки</h2>
-  <ul>
-    <li>REST API</li>
-    <li>SQL</li>
-    <li>Системный анализ</li>
-    <li>Тест-кейсы и документация</li>
-  </ul>
 
-  <h2>Контакты</h2>
-  <p>Email: example@example.com</p>
+  <!-- HTML контент -->
+  <h1 class="fade-text">Привет, я Андрей 👋</h1>
+  <p class="fade-text">Системный аналитик, люблю автоматизацию и чистую архитектуру.</p>
+  <p class="fade-text">Собрал это резюме на GitHub Pages!</p>
+
+  <!-- Встроенный JavaScript -->
+  <script>
+    console.log("Резюме загружено 🎉");
+  </script>
 </body>
 </html>
